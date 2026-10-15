@@ -1,0 +1,187 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+  font-family: Arial, Helvetica, sans-serif;
+  background: #f3f7ff;
+  color: #172b4d;
+  display: flex;
+  flex-direction: column;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 28px 8%;
+  background: #ffffff;
+  border-bottom: 1px solid #e6edfa;
+}
+
+.logo {
+  font-size: 30px;
+  font-weight: 800;
+  letter-spacing: -1.5px;
+  color: #173b78;
+  text-decoration: none;
+}
+
+.logo span {
+  color: #3978f6;
+}
+
+.header p {
+  font-size: 13px;
+  color: #71809a;
+}
+
+.hero {
+  width: min(760px, 100%);
+  margin: auto;
+  padding: 90px 24px;
+  text-align: center;
+}
+
+.tag {
+  display: inline-block;
+  padding: 9px 14px;
+  border-radius: 50px;
+  background: #e1ebff;
+  color: #2e63c8;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 1.5px;
+  margin-bottom: 28px;
+}
+
+.hero h1 {
+  font-size: clamp(38px, 7vw, 64px);
+  line-height: 1.12;
+  letter-spacing: -2px;
+  margin-bottom: 24px;
+}
+
+.hero h1 span {
+  color: #3978f6;
+}
+
+.description {
+  max-width: 520px;
+  margin: 0 auto 32px;
+  color: #657590;
+  font-size: 17px;
+  line-height: 1.8;
+}
+
+button {
+  padding: 16px 23px;
+  border: none;
+  border-radius: 12px;
+  background: #2865e8;
+  color: #ffffff;
+  font-size: 15px;
+  font-weight: 700;
+  cursor: pointer;
+  box-shadow: 0 8px 20px #2865e82b;
+  transition: background 0.2s, transform 0.2s;
+}
+
+button:hover {
+  background: #174fc8;
+  transform: translateY(-2px);
+}
+
+button:focus-visible {
+  outline: 3px solid #91b4ff;
+  outline-offset: 4px;
+}
+
+button span {
+  margin-left: 8px;
+}
+
+.action-card {
+  margin: 32px auto 0;
+  padding: 28px;
+  max-width: 520px;
+  border: 1px solid #dce7fb;
+  border-radius: 18px;
+  background: #ffffff;
+  box-shadow: 0 12px 35px #294d8510;
+}
+
+.action-card[hidden] {
+  display: none;
+}
+
+.card-label {
+  color: #3978f6;
+  font-size: 11px;
+  font-weight: 800;
+  letter-spacing: 1.3px;
+}
+
+#actionText {
+  margin: 18px 0 24px;
+  font-size: 21px;
+  font-weight: 700;
+  line-height: 1.5;
+}
+
+.secondary-button {
+  background: #eaf0ff;
+  color: #2458bd;
+  box-shadow: none;
+}
+
+.secondary-button:hover {
+  background: #dbe6ff;
+}
+
+.footer-note {
+  margin-top: 38px;
+  color: #8997ad;
+  font-size: 13px;
+}
+
+footer {
+  padding: 24px;
+  text-align: center;
+  color: #8290a6;
+  font-size: 12px;
+}
+
+footer span {
+  color: #3978f6;
+}
+
+@media (max-width: 600px) {
+  .header {
+    padding: 22px 6%;
+  }
+
+  .header p {
+    font-size: 11px;
+  }
+
+  .hero {
+    padding: 65px 22px;
+  }
+
+  .hero h1 {
+    letter-spacing: -1px;
+  }
+
+  .description {
+    font-size: 16px;
+  }
+
+  .action-card {
+    padding: 22px;
+  }
+}
